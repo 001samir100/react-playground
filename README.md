@@ -2,6 +2,10 @@
 
 All practise codes will be upload here for my further use if incase necessary.
 
+## Always use .env file when TOKEN or KEYS need to used.
+###`.env`
+It prevents sensitive data like KEYS from being accessed directly.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
