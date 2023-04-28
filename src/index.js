@@ -7,15 +7,15 @@ import { ErrorBoundary } from "react-error-boundary";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <ErrorBoundary
+	<React.StrictMode>
+		{/* <ErrorBoundary
       fallback={
         <h1>Oh no! Something went terribly wrong. Please try again later.</h1>
       }
-    >
-      <App />
-    </ErrorBoundary>
-  </React.StrictMode>
+    > */}
+		<App />
+		{/* </ErrorBoundary> */}
+	</React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function

@@ -21,39 +21,33 @@ import { ErrorBoundary } from "react-error-boundary";
 import ReactErrorBoundary from "./errors/ErrorBoundary";
 import { useEffect, useRef, useState } from "react";
 import CheckInternetConnection from "./checkConnection/CheckInternetConnection";
+import FetchPhoto from "./fetchApi/FetchPhoto";
 
 function Greeting({ subject }) {
-  return <div>Hello {subject.toUpperCase()}</div>;
+	return <div>Hello {subject.toUpperCase()}</div>;
 }
 
 function Farewell({ subject }) {
-  return <div>Goodbye {subject.toUpperCase()}</div>;
+	return <div>Goodbye {subject.toUpperCase()}</div>;
 }
 
 function App() {
-  return (
-    <>
-      {/* <ErrorDemo></ErrorDemo> */}
-      <CheckInternetConnection></CheckInternetConnection>
-    </>
-    // <div>
-    //   <ErrorBoundary FallbackComponent={OurFallbackComponent}>
-    //     <Greeting />
-    //     <Farewell />
-    //   </ErrorBoundary>
-    // </div>
-  );
+	return (
+		<>
+			<FetchPhoto></FetchPhoto>
+		</>
+	);
 }
 const OurFallbackComponent = ({
-  error,
-  componentStack,
-  resetErrorBoundary,
+	error,
+	componentStack,
+	resetErrorBoundary,
 }) => {
-  return (
-    <div>
-      <h1 style={{ color: "red" }}>An error occurred: {error.message}</h1>
-      <button onClick={resetErrorBoundary}>Try again</button>
-    </div>
-  );
+	return (
+		<div>
+			<h1 style={{ color: "red" }}>An error occurred: {error.message}</h1>
+			<button onClick={resetErrorBoundary}>Try again</button>
+		</div>
+	);
 };
 export default App;
