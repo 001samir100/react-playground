@@ -1,3 +1,7 @@
+# This project is created to learn react js
+
+All practise codes will be upload here for my further use if incase necessary.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
